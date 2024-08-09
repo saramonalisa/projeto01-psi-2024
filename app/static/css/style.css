@@ -7,6 +7,10 @@ header{
     position: sticky;
 }
 
+footer{
+    position: sticky;
+}
+
 #logo{
     max-height: 6vh;
 }

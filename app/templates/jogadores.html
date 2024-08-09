@@ -1,4 +1,25 @@
 {% extends 'base.html' %}
-{% block title %}Clube de Regatas do Flamengo{% endblock %}
+{% load static %}
+
+{% block title %}Jogadores{% endblock %}
+
 {% block content %}
+
+<h2 class="d-flex justify-content-center mt-2 mb-2 text-light">JOGADORES</h2>
+
+<div class="row row-cols-1 row-cols-md-2">
+    {% for jogador in jogadores %}
+    <div class="card" style="width: 18rem;">
+        <img src="{% static jogador.foto %}" class="card-img-top" alt="{{ jogador.nome }}">
+        <div class="card-body">
+            <h5 class="card-title fw-bold text-mengo">{{ jogador.numero }} - {{ jogador.nome }}</h5>
+            <div class="card-text">
+                <p class="fw-bold">Posição: <span class="fw-medium">{{ jogador.posicao }}</span><br>
+                Data de Nascimento: <span class="fw-medium">{{ jogador.nascimento }}</span><br>
+                Cidade: <span class="fw-medium">{{ jogador.cidade }}</span><br></p>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+
 {% endblock %}

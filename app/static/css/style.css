@@ -6,6 +6,7 @@ body{
 header{
     position: sticky;
 }
+
 #logo{
     max-height: 6vh;
 }
@@ -14,10 +15,14 @@ header{
     background-color: #c4271c;
 }
 
+.text-mengo{
+    color: #c4271c;
+}
+
 a:hover {
-    color: white;
+    color: white !important;
 }
   
 a:active {
-    color: white;
+    color: white !important;
 } 

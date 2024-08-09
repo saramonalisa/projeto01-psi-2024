@@ -5,50 +5,50 @@ def index(request):
 
 def jogadores(request):
     
-    {"nome": "Matheus Cunha", "numero": "25",
+    jogadores = [{"nome": "Matheus Cunha", "numero": "25",
      "posicao": "Goleiro", "nascimento": "24/05/2001 (23 anos)",
-     "cidade": "Tupi Paulista, SP", "foto": "matheuscunha.webp"},
+     "cidade": "Tupi Paulista, SP", "foto": "img/matheuscunha.webp"},
     
     {"nome": "David Luiz", "numero": "23",
      "posicao": "Zagueiro", "nascimento": "22/04/1987 (37 anos)",
-     "cidade": "Diadema, SP", "foto": "davidluiz.webp"},
+     "cidade": "Diadema, SP", "foto": "img/davidluiz.webp"},
     
     {"nome": "Leonardo Pereira", "numero": "4",
      "posicao": "Zagueiro", "nascimento": "31/01/1996 (28 anos)",
-     "cidade": "Curitiba, PR", "foto": "leopereira.webp"},
+     "cidade": "Curitiba, PR", "foto": "img/leopereira.webp"},
     
     {"nome": "Varela", "numero": "2",
      "posicao": "Lateral Direito",
      "nascimento": "24/03/1993 (31 anos)",
-     "cidade": "Montevidéu, Uruguai", "foto": "varela.webp"},
+     "cidade": "Montevidéu, Uruguai", "foto": "img/varela.webp"},
     
     {"nome": "Matías Viña", "numero": "17",
      "posicao": "Lateral Esquerdo", "nascimento": "09/11/1997 (26 anos)",
-     "cidade": "Empalme Olmos, Uruguai", "foto": "matiasvina.webp"},
+     "cidade": "Empalme Olmos, Uruguai", "foto": "img/matiasvina.webp"},
     
     {"nome": "Gerson Santos da Silva", "numero": "8",
      "posicao": "Volante", "nascimento": "20/05/1997 (27 anos)",
-     "cidade": "Rio de Janeiro, RJ", "foto": "gerson.webp"},
+     "cidade": "Rio de Janeiro, RJ", "foto": "img/gerson.webp"},
     
     {"nome": "Giorgian De Arrascaeta", "numero": "14",
      "posicao": "Meia", "nascimento": "01/06/1994 (30 anos)",
-     "cidade": "Nuevo Berlín, Uruguai", "foto": "arrascaeta.webp"},
+     "cidade": "Nuevo Berlín, Uruguai", "foto": "img/arrascaeta.webp"},
     
     {"nome": "Victor Hugo", "numero": "29",
      "posicao": "Meia", "nascimento": "11/05/2004 (20 anos)",
-     "cidade": "Rio de Janeiro, RJ", "foto": "victorhugo.webp"},
+     "cidade": "Rio de Janeiro, RJ", "foto": "img/victorhugo.webp"},
     
     {"nome": "Lorran", "numero": "19",
      "posicao": "Meia", "nascimento": "04/07/2006 (18 anos)",
-     "cidade": "Rio de Janeiro, RJ", "foto": "lorran.webp"},
+     "cidade": "Rio de Janeiro, RJ", "foto": "img/lorran.webp"},
     
     {"nome": "Gabriel Barbosa", "numero": "99",
      "posicao": "Atacante", "nascimento": "30/08/1996 (27 anos)",
-     "cidade": "São Bernardo do Campo, SP", "foto": "gabigol.webp"},
+     "cidade": "São Bernardo do Campo, SP", "foto": "img/gabigol.webp"},
     
     {"nome": "Pedro Guilherme", "numero": "9",
      "posicao": "Atacante", "nascimento": "20/06/1997 (27 anos)",
-     "cidade": "Rio de Janeiro, RJ", "foto": "pedroguilherme.webp"}
+     "cidade": "Rio de Janeiro, RJ", "foto": "img/pedroguilherme.webp"}]
     
     context = {
         "jogadores": jogadores,
